@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Cycle Tracker</title>
+        <!-- if you call this an iFruit Tracker you get bad trades -->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class="cycle-tech-info">
+            <h1>Box Cycle Tracker</h1>
+	    <p>A simpler way to track box cycles in BO1.</p>
+            <button class="normal-btn" id="dismiss-btn">Dismiss</button>
+        </div>
+
+        <div class="prev-cycles">
+            <h1>Previous Cycles</h1>
+            <p>Here, your previous box cycles will appear.</p>
+            <button class="normal-btn" id="close-btn">Close</button>
+            <p id="prev-cycles"></p>
+        </div>
+
+        <h1 id="map-name">Select Map</h1>
+        <div id="toolbar">
+            <h3>TIP: To mark a location as skipped, right click it.</h3>
+            <button class="normal-btn" id="back-btn">Back</button>
+            <button class="normal-btn" id="show-prev-btn">Show Prev Cycles</button>
+            <button class="normal-btn" id="reset-cycle-btn">Reset Cycle</button>
+        </div>
+        
+        <div class="map-selector"></div>
+
+        <div class="location-tracker"></div>
+    </body>
+
+    <script src="./tracker.js"></script>
+    <script src="./map-selector.js"></script>
+    <script src="./locations.js"></script>
+    <script src="./cycle-frontend.js"></script>
+</html>
